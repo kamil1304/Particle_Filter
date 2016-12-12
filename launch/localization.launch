@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="assignment_4" type="localization" name="localization" clear_params="true" output="screen" />
+
+    <rosparam command="load" file="$(find assignment_4)/parameters/localization_parameters.yaml"/>
+
+</launch>

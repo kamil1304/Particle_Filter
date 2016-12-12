@@ -1,0 +1,30 @@
+#++++++++++++ Topics ++++++++++++++++++
+map_subscriber: '/map'
+motion_update_subscriber: '/thymio_driver/odometry'
+scan_subscriber: '/scan'
+particles_publisher: '/particles'
+particles_frame_id: 'odometry_link'
+msg_buffer: 1
+
+#+++++++++++ Particles +++++++++++++++++
+number_of_particles: 2000
+min_x: 0
+max_x: 2
+min_y: 0
+max_y: 2
+min_theta: -3
+max_theta: 3
+
+#++++++++++ SingleParticle +++++++++++++
+alfa1: 0.01 
+alfa2: 2000 
+alfa3: 200 
+alfa4: 0.0001 
+#++++++++++ SensorUpdate +++++++++++++++
+occupancy_value: 100
+outliers_threshold: 10
+scan_filter: 12
+weight_factor: 100
+rounding_factor: 0.997
+localization_accuracy_radius: 0.12
+
